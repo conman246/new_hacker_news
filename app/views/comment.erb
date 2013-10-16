@@ -1,0 +1,13 @@
+<div class="container">
+  <form action="/comment" method="post">
+    <h3>Add a comment</h3>
+    <textarea name="new_comment" />
+
+    </textarea><br/>
+    <input type="text" name="post_id" value="<%= @comments.first.post_id %>" style="display:none"/>
+    <input type="submit" >
+  </form>
+  <br/>
+  <% @comments.each do |x| %>
+  <%=  x.content %><br/><br/>
+  <% end %>

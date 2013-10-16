@@ -1,0 +1,11 @@
+<div class="container">
+  <h3>My posts</h3>
+  <% @user_posts.each do |x| %>
+  <%= x.content %><br/><br/>
+  <% end %><br><br><br>
+
+<h3> MY COMMENTS</h3>
+    <% @user_comments.each do |x| %>
+  <%= x.content %><br/><br>
+  <% end %>
+</div>

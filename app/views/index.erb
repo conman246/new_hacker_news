@@ -1,0 +1,7 @@
+
+<div class="container">
+  <% @all_posts.each do |t| %>
+  <a href="/post/<%= t.id %>"><%= t.title %></a><a href="/comment/<%= t.id %>">Comment</a>
+  <br>
+  <% end %> 
+</div>
